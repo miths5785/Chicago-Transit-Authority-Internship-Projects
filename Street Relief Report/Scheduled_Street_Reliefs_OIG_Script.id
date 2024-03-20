@@ -1,0 +1,54 @@
+# Mithilesh Bhutada
+# Data Analyst Intern, Bus Scheduling
+# Chicago Transit Authority
+
+# June-July 2023
+
+title "Street Relief"
+desc "Street Relief report for all the 7 garages with all daytypes included"
+
+var v_booking { type 'string' }
+
+separator ','
+
+file pay {
+
+   name ' "Street_Relief_" + csc_booking + ".csv" '
+
+   foreach crew_schedule { var v_booking { assign ' Get(booking).bk_description ' } }
+   
+   # Write header
+   line header {
+      item h_rel_sch     	{ value ' "Relief Scheduled" ' }
+      item h_str_rel     	{ value ' "Street Relief" ' }
+      item h_rel_blk_str 	{ value ' "Relief at Block Start" ' }
+      item h_rel_blk_end 	{ value ' "Relief at Block End" ' }
+      item h_rel_opr_day 	{ value ' "Relief Operating Days" ' }
+      item h_rel_time    	{ value ' "Relief Time" ' }
+      item h_blk_gar     	{ value ' "Block Garage" '}
+      item h_rel_blk     	{ value ' "Relief Block" ' }
+      item h_rel_plc     	{ value ' "Relief Place" ' }
+      item h_csc_type    	{ value ' "Crew Schedule Type" ' }
+      item h_booking_name	{ value ' "Booking Name" ' }
+   }
+   
+   foreach relief {
+      
+      # Write data
+      line data {
+         item rel_is_scheduled
+         item rel_type_is_street
+         item rel_is_at_blk_start
+         item rel_is_at_blk_end
+         item rel_operating_days
+         item rel_time
+	 item rel_crew_base
+	 item rel_block
+	 item rel_place
+	 item csc_sched_type { value 'Get(crew_schedule).csc_sched_type' }
+	 item csc_booking_name { value v_booking }
+
+      }
+   }
+}
+
