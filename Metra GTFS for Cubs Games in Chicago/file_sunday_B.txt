@@ -1,0 +1,16 @@
+block|CB132001||||0|0|40ft|40ft|||F|0|||||21217582
+blk_vehicle_unit_at_start|1|21183371
+block_activity|5|246785884|0|0h00|||
+block_activity|6|277443663|0|0h00|||
+block_activity|6|212183667|0|0h00|||
+block_activity|6|206587878|0|0h00|||
+block_activity|6|210995671|0|0h00|||
+block_activity|6|241874377|0|0h00|||
+block_activity|2|287230230|0|0h00|||
+block|CB132002||||0|0|40ft|40ft|||F|0|||||21854000
+blk_vehicle_unit_at_start|1|21902410
+block_activity|5|269652762|0|0h00|||
+block_activity|6|243788739|0|0h00|||
+block_activity|6|273094105|0|0h00|||
+block_activity|6|298768528|0|0h00|||
+block_activity|2|265534973|0|0h00|||
