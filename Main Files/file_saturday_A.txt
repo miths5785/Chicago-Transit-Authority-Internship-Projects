@@ -1,0 +1,5 @@
+vehicle_schedule|MB-WRIG|00|5|TEST Wrigley #80 Saturday |161|||MBHUTADA|1|0|||||BUS Q-05|Q05-SA|Q05-SA|1||Q-SA05|Q-SA05|||Q05-SA||BUS Q-05|BUS Q-05|||||0|170537
+vehicle_unit|22263869||40ft|40ft
+vehicle_unit|24886679||40ft|40ft
+vehicle_unit|25127891||40ft|40ft
+vehicle_unit|22196085||40ft|40ft
